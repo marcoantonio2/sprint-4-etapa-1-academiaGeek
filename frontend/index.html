@@ -13,41 +13,37 @@
 
 <body class="m-5 bg-dark" style="color: aliceblue;">
     <center>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-outline-primary" id="addBrand">Añadir marca</button>
+            <button type="button" class="btn btn-outline-primary" id="addLine">Añadir linea</button>
+        </div>
         <form action="">
             <form class="row g-3">
-                <div class="col-md-4">
-                    <label for="inputBrand" class="form-label">Marca</label>
-                    <select id="inputBrand" class="form-select" required>
-                        <option selected>Choose...</option>
-                        <option>VW</option>
-                    </select>
+                <div class="col-md-4" id="selectHolder1">
+                    
                 </div>
-                <div class="col-md-4">
-                    <label for="inputLine" class="form-label">Linea</label>
-                    <select id="inputLine" class="form-select" required>
-                        <option selected>Choose...</option>
-                        <option>a</option>
-                    </select>
+                <div class="col-md-4" id="selectHolder2">
+                    
                 </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 form" style="display: none;">
                     <label for="inputPlate" class="form-label">Número de placa</label>
                     <input type="text" class="form-control" id="inputPlate" placeholder="ABC123" required>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 form" style="display: none;">
                     <label for="inputModel" class="form-label">Modelo</label>
                     <input type="text" class="form-control" id="inputModel" placeholder="model X" required>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 form" style="display: none;">
                     <label for="inputVenciSeguro" class="form-label">Fecha vencimiento seguro</label>
                     <input type="date" class="form-control" id="inputVenciSeguro" required>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 form" style="display: none;">
                     <label for="inputVenciTecno" class="form-label">Fecha vencimiento tecnicomecanica</label>
                     <input type="date" class="form-control" id="inputVenciTecno" required>
                 </div>
-                <div class="col-12" style="margin-top: 20px;">
-                    <button type="submit" class="btn btn-primary">Crear</button>
+                <div class="col-12 form" style="margin-top: 20px;">
+                    <button type="submit" class="btn btn-primary form" style="display: none;">Crear</button>
                 </div>
             </form>
         </form>
