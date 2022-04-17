@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "e94deb03-832d-4f15-ad35-f83ac2d88abb",
+		"name": "sprint backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST a vehiculos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"nombre\": \"hola\",\r\n        \"descripcion\": \"que pasa genteeee\",\r\n        \"numero_placa\": \"qwe345\",\r\n        \"id_linea\": 4,\r\n        \"fecha_vencimiento_seguro\": \"2022-04-17\",\r\n        \"fecha_vencimiento_tecnicomecanica\": \"2022-05-08\",\r\n        \"modelo\": \"awd\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-sprint-1-back.herokuapp.com/api/vehiculos",
+					"protocol": "https",
+					"host": [
+						"api-sprint-1-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"vehiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT a vehiculos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"nombre super original\",\r\n    \"descripcion\": \"descripcion random\",\r\n    \"numero_placa\": \"qwerty\",\r\n    \"id_linea\": 5,\r\n    \"fecha_vencimiento_seguro\": \"2029-04-17\",\r\n    \"fecha_vencimiento_tecnicomecanica\": \"2028-05-08\",\r\n    \"modelo\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-sprint-1-back.herokuapp.com/api/vehiculos/3",
+					"protocol": "https",
+					"host": [
+						"api-sprint-1-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"vehiculos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELET a vehiculos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api-sprint-1-back.herokuapp.com/api/vehiculos/22",
+					"protocol": "https",
+					"host": [
+						"api-sprint-1-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"vehiculos",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET a vehiculos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-sprint-1-back.herokuapp.com/api/vehiculos/",
+					"protocol": "https",
+					"host": [
+						"api-sprint-1-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"vehiculos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lineas activas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-sprint-1-back.herokuapp.com/api/lineas/linea-active",
+					"protocol": "https",
+					"host": [
+						"api-sprint-1-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"lineas",
+						"linea-active"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "promedio modelos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-sprint-1-back.herokuapp.com/api/vehiculos/avg-modelos",
+					"protocol": "https",
+					"host": [
+						"api-sprint-1-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"vehiculos",
+						"avg-modelos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "suma-modelos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-sprint-1-back.herokuapp.com/api/vehiculos/suma-modelos",
+					"protocol": "https",
+					"host": [
+						"api-sprint-1-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"vehiculos",
+						"suma-modelos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "numero placa, modelo, etc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-sprint-1-back.herokuapp.com/api/vehiculos/vehiculo-column",
+					"protocol": "https",
+					"host": [
+						"api-sprint-1-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"vehiculos",
+						"vehiculo-column"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consulta por rango",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-sprint-1-back.herokuapp.com/api/vehiculos/modelo/2/3",
+					"protocol": "https",
+					"host": [
+						"api-sprint-1-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"vehiculos",
+						"modelo",
+						"2",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "maximo y minimo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-sprint-1-back.herokuapp.com/api/vehiculos/modelo",
+					"protocol": "https",
+					"host": [
+						"api-sprint-1-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"vehiculos",
+						"modelo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET por fechas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-sprint-1-back.herokuapp.com/api/vehiculos/0213-03-12/2022-04-17",
+					"protocol": "https",
+					"host": [
+						"api-sprint-1-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"vehiculos",
+						"0213-03-12",
+						"2022-04-17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST lineas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"test2\",\r\n    \"descripcion\": \"descripcion original 2\",\r\n    \"estado\":\"N\",\r\n    \"id_marca\":8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-sprint-1-back.herokuapp.com/api/lineas/",
+					"protocol": "https",
+					"host": [
+						"api-sprint-1-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"lineas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST marcas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"test 2\",\r\n    \"descripcion\": \"descripcion original 2\",\r\n    \"estado\":\"N\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-sprint-1-back.herokuapp.com/api/marcas/",
+					"protocol": "https",
+					"host": [
+						"api-sprint-1-back",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"marcas",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
